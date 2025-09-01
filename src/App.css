@@ -1,0 +1,35 @@
+/* Stili globali per l'applicazione */
+/* Imposta il colore di sfondo uniforme per tutta la pagina */
+
+/* Sfondo globale dell'applicazione */
+body {
+  background-color: #f3f2ef;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Container principale dell'app */
+#root {
+  background-color: #f3f2ef;
+  min-height: 100vh;
+}
+
+/* Assicura che tutti i container mantengano lo sfondo uniforme */
+.App {
+  background-color: #f3f2ef;
+  min-height: 100vh;
+}
+
+/* Container Bootstrap con sfondo uniforme */
+.container,
+.container-fluid {
+  background-color: transparent;
+}
+
+/* Assicura che le righe e colonne Bootstrap mantengano la trasparenza */
+.row,
+.col,
+.col-* {
+  background-color: transparent;
+}
