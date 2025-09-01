@@ -40,11 +40,15 @@
 }
 
 .recommended-title {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   color: #000000;
   margin: 0;
-  line-height: 1.25;
+  line-height: 1.2;
+  width: auto;
+  height: 24px;
+  display: flex;
+  align-items: center;
 }
 
 .privacy-icon {
