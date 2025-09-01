@@ -1,15 +1,37 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Col } from "react-bootstrap";
 import ProfileTest from "./components/Test";
+import RecommendedSection from "./components/RecommendedSection";
+import AnalyticsCard from "./components/AnalyticsCard";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={< ProfileTest/>} />
-        </Routes>
+        <div className="d-flex flex-column min-vh-100">
+          <Container className="mt-4 flex-grow-1">
+            <Row>
+              <Col lg={8} className="mx-auto">
+                {/* Componente RecommendedSection - Sezione "Consigliato per te" */}
+                <RecommendedSection />
+
+                {/* Componente AnalyticsCard per testare la replica dell'immagine */}
+                <AnalyticsCard />
+
+                {/* Componente esistente */}
+                <Routes>
+                  <Route path="/" element={<ProfileTest />} />
+                </Routes>
+              </Col>
+            </Row>
+          </Container>
+
+          {/* Footer component che replica il design di LinkedIn */}
+          <Footer />
+        </div>
       </BrowserRouter>
     </>
   );
